@@ -648,26 +648,24 @@ background-position:
        ========================================================= */
 
     .true-north {
+    position: relative;
+    z-index: 20;
 
-      position:
-        relative;
+    padding: 90px 8%;
 
-      z-index:
-        20;
-
-      padding:
-        90px 8%;
-
-      background:
-
+    background-image:
         linear-gradient(
-          180deg,
+            180deg,
+            rgba(3, 12, 22, 0.72) 0%,
+            rgba(3, 12, 22, 0.82) 45%,
+            rgba(3, 12, 22, 0.94) 100%
+        ),
+        url("assets/images/els-homepage-hero.png");
 
-          var(--deep-space),
-
-          #081521
-        );
-    }
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
 
 
     .section-inner {
