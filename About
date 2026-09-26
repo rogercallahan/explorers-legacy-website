@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Explorers Legacy Studios</title>
+<style>
+:root {
+    --deep-space: #0D1B2A;
+    --ocean-blue: #1B4F72;
+    --discovery-teal: #2FB6B0;
+    --explorer-gold: #D4AF37;
+    --maple-ivory: #F4EBD2;
+    --white: #FFFFFF;
+    --nav-height: 92px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--deep-space);
+    color: var(--maple-ivory);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(13, 27, 42, 0.96);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.compass-mark {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+}
+
+.compass-mark img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    display: block;
+}
+.brand-copy {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.brand-subtitle {
+    color: var(--explorer-gold);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: var(--maple-ivory);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--explorer-gold);
+}
+.about-hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 8%;
+    text-align: center;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(47, 182, 176, 0.10),
+            transparent 55%
+        ),
+        linear-gradient(
+            180deg,
+            #081521,
+            var(--deep-space)
+        );
+}
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.about-eyebrow {
+    color: var(--discovery-teal);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.about-hero h1 {
+    color: var(--white);
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    line-height: 1.05;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+.about-hero-lead {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--maple-ivory);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.about-main {
+    width: min(1100px, 84%);
+    margin: 0 auto;
+    padding: 90px 0 110px;
+}
+.about-section {
+    padding: 72px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+.about-section:last-child {
+    border-bottom: none;
+}
+.section-label {
+    color: var(--discovery-teal);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.about-section h2 {
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 26px;
+}
+.about-section p {
+    color: var(--maple-ivory);
+    font-size: 1.08rem;
+    line-height: 1.85;
+    margin-bottom: 22px;
+}
+.mission-statement {
+    margin: 34px 0;
+    padding: 36px;
+    border: 1px solid rgba(47, 182, 176, 0.35);
+    border-radius: 14px;
+    background: rgba(47, 182, 176, 0.07);
+    text-align: center;
+}
+.mission-statement p {
+    margin: 0;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+.explorers-oath {
+    margin: 40px 0;
+    padding: 42px;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212, 175, 55, 0.08),
+            rgba(47, 182, 176, 0.05)
+        );
+    text-align: center;
+}
+.explorers-oath p {
+    margin-bottom: 12px;
+    color: var(--maple-ivory);
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.explorers-oath p:last-child {
+    margin-bottom: 0;
+}
+.explorer-first {
+    margin: 38px 0;
+    padding: 42px;
+    border-radius: 16px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(27, 79, 114, 0.32),
+            rgba(13, 27, 42, 0.92)
+        );
+    border: 1px solid rgba(47, 182, 176, 0.30);
+}
+.explorer-first p:last-child {
+    margin-bottom: 0;
+}
+.legacy-highlight {
+    margin: 40px 0;
+    padding: 44px 36px;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.30);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.30);
+}
+.closing-message {
+    padding: 90px 0 40px;
+    text-align: center;
+}
+.closing-message h2 {
+    color: var(--explorer-gold);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+.closing-message p {
+    max-width: 800px;
+    margin: 0 auto 22px;
+    color: var(--maple-ivory);
+    font-size: 1.12rem;
+    line-height: 1.85;
+}
+footer {
+    padding: 42px 8%;
+    text-align: center;
+    background: #081521;
+    border-top: 1px solid rgba(212, 175, 55, 0.16);
+}
+.footer-motto {
+    color: var(--explorer-gold);
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.footer-rocket {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+.footer-copy {
+    margin-top: 12px;
+    color: rgba(244, 235, 210, 0.68);
+    font-size: 0.82rem;
+}
+@media (max-width: 760px) {
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .about-hero {
+        min-height: 460px;
+        padding: 80px 7%;
+    }
+
+    .about-main {
+        width: 86%;
+        padding: 60px 0 80px;
+    }
+
+    .about-section {
+        padding: 54px 0;
+    }
+
+    .explorer-first,
+    .explorers-oath {
+        padding: 30px 24px;
+    }
+
+    .legacy-highlight {
+        padding: 36px 12px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<a
+    class="brand"
+    href="index.html"
+    aria-label="Explorers Legacy Studios Home"
+>
+<div class="compass-mark">
+    <img
+        src="assets/images/explorer_compass_circle.png"
+        alt="Explorer's Compass"
+    >
+</div>
+<div class="brand-copy">
+    <span class="brand-name">
+        Explorers Legacy
+    </span>
+
+    <span class="brand-subtitle">
+        Studios
+    </span>
+</div>
+</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="index.html#discover">Discover</a>
+<a href="index.html#true-north">True North</a>
+</nav>
+</header>
+<section class="about-hero">
+    <div class="about-hero-content">
+<div class="about-eyebrow">
+    About Explorers Legacy Studios
+</div>
+<h1>Every Journey Begins With Curiosity.</h1>
+<p class="about-hero-lead">
+    Curiosity has the power to change the direction of a life. A question can lead to an answer. An answer can lead to a discovery. And a discovery can reveal questions we never knew to ask.
+</p>
+<p class="about-hero-lead">
+    That cycle should never end.
+</p>
+<p class="about-hero-lead">
+    We build minds through curiosity, knowledge, and play.
+</p>
+    </div>
+</section>
+<main class="about-main">
+<section class="about-section">
+    <div class="section-label">Our Beginning</div>
+    <h2>Why Explorers Legacy Exists</h2>
+<p>
+    Explorers Legacy Studios began with an idea much larger than creating games, applications, exhibits, or even a future physical Institute.
+</p>
+<p>
+    It began with a responsibility.
+</p>
+<p>
+    Every generation inherits knowledge from the people who came before it. Someone asked the questions. Someone conducted the experiment. Someone wrote the book.
+</p>
+
+<p>
+    Someone built the machine. Someone explored beyond the known boundary. Someone discovered something and chose to leave what they learned behind.
+</p>
+
+<p>
+    We stand on those discoveries every day.
+</p>
+<p>
+    That means we have a responsibility of our own.
+</p>
+
+<div class="statement">
+    We should leave something behind for the Explorers who follow us.
+</div>
+
+<p>
+    Explorers Legacy Studios is our contribution to that continuing journey: a place where curiosity is encouraged, knowledge is shared, questions are celebrated, and discovery becomes something that can be passed forward.
+</p>
+
+<p>
+    We may never know where a question asked today will eventually lead.
+</p>
+
+<p>
+    <strong>And that is precisely the point.</strong>
+</p>
+</section>
+
+<section class="about-section">
+    <div class="section-label">Our Mission</div>
+    <h2>Building Minds Through Discovery</h2>
+
+    <div class="mission-statement">
+        <p>
+            To build minds through curiosity, knowledge, and play by creating meaningful experiences that inspire exploration, encourage discovery, and empower every Explorer to continue learning beyond the experience itself.
+        </p>
+    </div>
+    <p>
+        Our goal is not simply to teach someone an answer.
+    </p>
+
+    <p>
+        We want to help them discover the confidence to ask the <strong>next question</strong>.
+    </p>
+
+    <p>
+        Because learning should never have an ending.
+    </p>
+
+    <p>
+        There will always be another question to ask, another idea to test, another perspective to understand, another problem to solve, another place to explore, and another discovery waiting beyond what we currently know.
+    </p>
+</section>
+
+<section class="about-section">
+    <div class="section-label">Our True North</div>
+    <h2>The Explorer Comes First</h2>
+
+    <div class="statement">
+        THE EXPLORER COMES BEFORE THE ENGAGEMENT METRIC.
+    </div>
+
+    <div class="explorer-first">
+        <p>
+            Technology can be an extraordinary tool for learning, but time spent looking at a screen is not, by itself, a measure of discovery.
+        </p>
+
+        <p>
+            We do not want to build experiences designed merely to hold someone's attention.
+        </p>
+
+        <p>
+            <strong>We want to earn it through meaningful discovery.</strong>
+        </p>
+
+        <p>
+            Sometimes an Explorer's journey may begin inside one of our games or digital experiences. But the best outcome may be that they eventually put the device down.
+        </p>
+
+        <p>
+            Go outside. Look through a telescope. Build something. Conduct a safe experiment. Read a book. Visit a museum. Study an animal. Ask a teacher a question. Talk with a parent. Look at the night sky and wonder what is out there.
+        </p>
+
+        <p>
+            The digital experience should never become the destination. <strong>It should be another doorway.</strong>
+        </p>
+
+        <p>
+            <strong>ELS can provide stepping stones, but we should never pretend we're the whole path. The world around us—and everything that lies beyond it—is part of the classroom.</strong>
+        </p>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="section-label">Our Compass</div>
+    <h2>Our True North</h2>
+
+    <p>
+        Every expedition needs something that keeps it oriented.
+    </p>
+
+    <p>
+        For Explorers Legacy Studios, our principles serve as that compass.
+    </p>
+
+    <div class="statement">
+        These principles are our compass, not our destination. They keep us oriented toward our True North while reminding us that there is always more to discover.
+    </div>
+
+    <p>
+        Our True North is not a finish line. It is the direction in which we choose to travel.
+    </p>
+
+    <p>
+        We explore with wonder. We learn with purpose. We share what we discover.
+    </p>
+
+    <p>
+        And we remember that the knowledge we gain becomes more valuable when it helps another Explorer continue the journey.
+    </p>
+</section>
+
+<section class="about-section">
+    <div class="section-label">What We Believe</div>
+    <h2>The Explorer's Oath</h2>
+
+    <div class="explorers-oath">
+        <p><strong>We believe curiosity is humanity's greatest superpower.</strong></p>
+        <p>Every question opens a door.</p>
+        <p>Every discovery builds confidence.</p>
+        <p>Every challenge is an opportunity to grow.</p>
+        <p>We explore with wonder.</p>
+        <p>We learn with purpose.</p>
+        <p>We share what we discover.</p>
+        <p><strong>Together...</strong></p>
+        <p><strong>We build minds through curiosity, knowledge, and play.</strong></p>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="section-label">Always Learning</div>
+    <h2>There Is No End to Discovery</h2>
+
+    <p>
+        We reject the idea that education has a final destination.
+    </p>
+
+    <p>
+        Graduation is not the end of learning. Mastering a subject is not the end of questioning. Finding an answer is not the end of curiosity.
+    </p>
+
+    <p>
+        Every answer changes the place from which the next question is asked.
+    </p>
+
+    <p>
+        Knowledge builds upon knowledge. Discovery builds upon discovery. One Explorer's destination can become another Explorer's starting point.
+    </p>
+
+    <p>
+        That is why growth at Explorers Legacy Studios is never described as something that simply <strong>ends</strong>.
+    </p>
+
+    <p>
+        There is always another horizon.
+    </p>
+</section>
+
+<section class="about-section">
+    <div class="section-label">Our Legacy</div>
+    <h2>Leave a Stepping Stone</h2>
+
+    <p>
+        Perhaps no idea defines the word <strong>Legacy</strong> in Explorers Legacy Studios more than this:
+    </p>
+
+    <div class="legacy-highlight">
+        <p>
+            Every discovery becomes a stepping stone — not only for today's Explorer, but for the Explorers who follow.
+        </p>
+    </div>
+
+    <p>
+        We are beneficiaries of countless people whose names we may never know.
+    </p>
+
+    <p>
+        Their discoveries became our starting points.
+    </p>
+
+    <p>
+        Our responsibility is to do the same.
+    </p>
+
+    <p>
+        An Explorer does not need to change the entire world to leave a legacy. A question shared, an idea tested, something built, knowledge passed along, or another person's curiosity awakened can become a stepping stone.
+    </p>
+
+    <p>
+        Someone else may eventually stand upon it.
+    </p>
+
+    <p>
+        And from there, they may see farther than we ever could.
+    </p>
+
+    <p>
+        That is not the end of our journey.
+    </p>
+
+    <p>
+        <strong>That is the continuation of it.</strong>
+    </p>
+</section>
+
+<section class="about-section">
+    <div class="section-label">For Those Who Follow</div>
+    <h2>The Legacy Continues</h2>
+
+    <p>
+        Explorers Legacy Studios is being built with the future in mind.
+    </p>
+
+    <p>
+        Games may change. Technology will change. The ways people learn will change. And someday, the people leading this organization will change too.
+    </p>
+
+    <p>
+        But the responsibility should remain:
+    </p>
+
+    <div class="statement">
+        Every generation of Explorers must leave the organization stronger than they found it.
+    </div>
+
+    <p>
+        The purpose of Explorers Legacy is not to create something that belongs permanently to one person or one generation.
+    </p>
+
+    <p>
+        It is to create something worth continuing.
+    </p>
+
+    <p>
+        Something future Explorers can inherit, improve, question, rebuild, and carry farther.
+    </p>
+
+    <p>
+        Our work today should become their starting point tomorrow.
+    </p>
+</section>
+
+<section class="closing-message">
+    <h2>Onward to Discovery.</h2>
+
+    <p>
+        There will always be more to learn. There will always be more to explore. There will always be another question beyond the answer we just discovered.
+    </p>
+
+    <p>
+        So we do not measure our journey by reaching a final destination. We measure it by the stepping stones we leave behind and the doors we open for those who follow.
+    </p>
+
+    <p>
+        <strong>Explore with wonder. Learn with purpose. Share what you discover. Leave the next Explorer somewhere meaningful to begin.</strong>
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-motto">
+        Onward to Discovery.
+        <img
+            src="assets/images/eli_rocket.png"
+            alt="Explorers Legacy rocket"
+            class="footer-rocket"
+        >
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Explorers Legacy Studios. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
