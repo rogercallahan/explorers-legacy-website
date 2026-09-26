@@ -149,36 +149,6 @@
 
       place-items: center;
 
-      border:
-        2px solid
-        var(--explorer-gold);
-
-      border-radius:
-        50%;
-
-      color:
-        var(--explorer-gold);
-
-      font-size:
-        30px;
-
-      box-shadow:
-
-        0 0 20px
-        rgba(212, 175, 55, 0.20),
-
-        inset 0 0 16px
-        rgba(212, 175, 55, 0.08);
-    }
-
-    .compass-mark::before {
-
-      content: "✦";
-
-      transform:
-        rotate(45deg);
-    }
-
 
     .brand-copy {
 
@@ -190,7 +160,13 @@
       line-height:
         1;
     }
-
+      
+ .compass-mark img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    display: block;
+}
 
     .brand-name {
 
@@ -902,6 +878,13 @@ background-position:
       text-transform:
         uppercase;
     }
+    .footer-rocket {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-left: 6px;
+}
 
 
     .footer-copy {
@@ -1011,16 +994,15 @@ background-position:
     @media (max-width: 520px) {
 
       .compass-mark {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+}
 
-        width:
-          44px;
-
-        height:
-          44px;
-
-        font-size:
-          24px;
-      }
+.compass-mark img {
+    width: 44px;
+    height: 44px;
+}
 
 
       .brand-name {
@@ -1106,10 +1088,12 @@ background-position:
       aria-label="Explorers Legacy Studios Home"
     >
 
-      <div
-        class="compass-mark"
-        aria-hidden="true"
-      ></div>
+      <div class="compass-mark">
+    <img
+        src="assets/images/explorer_compass_circle.png"
+        alt="Explorer's Compass"
+    >
+</div>
 
       <div class="brand-copy">
 
@@ -1372,7 +1356,12 @@ background-position:
   <footer id="contact">
 
     <div class="footer-motto">
-      Onward to Discovery. 🚀
+      Onward to Discovery. 
+      <img
+  src="assets/images/eli_rocket.png"
+  alt=""
+  class="footer-rocket"
+>
     </div>
 
 
