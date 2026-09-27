@@ -21,6 +21,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--nav-height) + 24px);
 }
 
 body {
@@ -150,6 +151,7 @@ nav a:hover {
     color: var(--maple-ivory);
     font-size: 1.2rem;
     line-height: 1.8;
+    letter-spacing: 0.01em;
 }
 .about-main {
     width: min(1100px, 84%);
@@ -199,6 +201,16 @@ nav a:hover {
     font-weight: 700;
     line-height: 1.7;
 }
+.statement {
+    margin: 34px 0;
+    padding: 26px 30px;
+    border-left: 4px solid var(--explorer-gold);
+    background: rgba(212, 175, 55, 0.06);
+    color: var(--explorer-gold);
+    font-size: 1.18rem;
+    font-weight: 800;
+    line-height: 1.6;
+}
 .explorers-oath {
     margin: 40px 0;
     padding: 42px;
@@ -241,6 +253,9 @@ nav a:hover {
     margin: 40px 0;
     padding: 44px 36px;
     text-align: center;
+    color: var(--explorer-gold);
+    font-size: 1.25rem;
+    font-weight: 700;
     border-top: 1px solid rgba(212, 175, 55, 0.30);
     border-bottom: 1px solid rgba(212, 175, 55, 0.30);
 }
@@ -345,10 +360,11 @@ footer {
 </div>
 </a>
 <nav>
-<a href="index.html">Home</a>
+<a href="index.html#home">Home</a>
+<a href="index.html#games">Games</a>
+<a href="index.html#learn">Learn</a>
 <a href="about.html">About</a>
-<a href="index.html#discover">Discover</a>
-<a href="index.html#true-north">True North</a>
+<a href="index.html#contact">Contact</a>
 </nav>
 </header>
 <section class="about-hero">
@@ -364,7 +380,7 @@ footer {
     That cycle should never end.
 </p>
 <p class="about-hero-lead">
-    We build minds through curiosity, knowledge, and play.
+    We build minds through curiosity, knowledge, play, and real-world exploration.
 </p>
     </div>
 </section>
@@ -416,7 +432,7 @@ footer {
 
     <div class="mission-statement">
         <p>
-            To build minds through curiosity, knowledge, and play by creating meaningful experiences that inspire exploration, encourage discovery, and empower every Explorer to continue learning beyond the experience itself.
+            To build minds through curiosity, knowledge, play, and real-world exploration by creating meaningful experiences...
         </p>
     </div>
     <p>
@@ -517,7 +533,7 @@ footer {
         <p>We learn with purpose.</p>
         <p>We share what we discover.</p>
         <p><strong>Together...</strong></p>
-        <p><strong>We build minds through curiosity, knowledge, and play.</strong></p>
+        <p><strong>We build minds through curiosity, knowledge, play, and real-world exploration.</strong></p>
     </div>
 </section>
 
