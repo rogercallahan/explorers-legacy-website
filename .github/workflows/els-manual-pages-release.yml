@@ -1,0 +1,130 @@
+name: ELS manual website release
+run-name: ELS release ${{ inputs.expected_commit }} by ${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_commit:
+        description: Full main commit approved for this release
+        required: true
+        type: string
+      readiness_record:
+        description: Durable record of Atlas concurrence and Roger authorization
+        required: true
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: els-website-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: >-
+      github.repository == 'rogercallahan/explorers-legacy-website' &&
+      github.ref == 'refs/heads/main' &&
+      github.actor == 'rogercallahan' &&
+      github.triggering_actor == 'rogercallahan'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    outputs:
+      artifact_name: ${{ steps.identity.outputs.artifact_name }}
+      artifact_id: ${{ steps.upload.outputs.artifact_id }}
+      payload_sha256: ${{ steps.stage.outputs.payload_sha256 }}
+    steps:
+      - name: Validate release identity
+        id: identity
+        shell: bash
+        env:
+          EXPECTED_COMMIT: ${{ inputs.expected_commit }}
+          READINESS_RECORD: ${{ inputs.readiness_record }}
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_COMMIT" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$EXPECTED_COMMIT" == "$GITHUB_SHA" ]]
+          [[ -n "${READINESS_RECORD//[[:space:]]/}" ]]
+          printf 'artifact_name=els-pages-%s-%s\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout exact reviewed commit
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Stage static website and record payload identity
+        id: stage
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$(git rev-parse HEAD)" == "$GITHUB_SHA" ]]
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, shutil
+          root = pathlib.Path.cwd()
+          stage = pathlib.Path(os.environ['RUNNER_TEMP']) / 'els-site'
+          stage.mkdir()
+          for name in ('index.html', 'about.html', 'assets'):
+              source = root / name
+              if not source.exists():
+                  raise SystemExit('Missing required website content: ' + name)
+              if source.is_dir():
+                  shutil.copytree(source, stage / name, symlinks=True)
+              else:
+                  shutil.copyfile(source, stage / name)
+          manifest = []
+          for path in sorted(stage.rglob('*')):
+              if path.is_symlink():
+                  raise SystemExit('Website payload must not contain symbolic links')
+              if path.is_file() and not any(p.startswith('.') for p in path.relative_to(stage).parts):
+                  manifest.append({'path': path.relative_to(stage).as_posix(),
+                                   'sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
+          digest = hashlib.sha256(json.dumps(manifest, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+          (pathlib.Path(os.environ['RUNNER_TEMP']) / 'els-payload-manifest.json').write_text(json.dumps(manifest, indent=2))
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('payload_sha256=' + digest + '\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('Reviewed commit: `' + os.environ['GITHUB_SHA'] + '`\n\nPayload manifest SHA-256: `' + digest + '`\n\n')
+              summary.write('Payload file hashes:\n\n```json\n' + json.dumps(manifest, indent=2) + '\n```\n')
+          PY
+
+      - name: Upload this run's immutable website artifact
+        id: upload
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          name: ${{ steps.identity.outputs.artifact_name }}
+          path: ${{ runner.temp }}/els-site
+          retention-days: 7
+
+      - name: Record artifact and authorization reference
+        shell: bash
+        env:
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+          ARTIFACT_NAME: ${{ steps.identity.outputs.artifact_name }}
+          READINESS_RECORD: ${{ inputs.readiness_record }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          evidence = {key: os.environ[key] for key in ('GITHUB_SHA', 'GITHUB_RUN_ID', 'GITHUB_RUN_ATTEMPT', 'ARTIFACT_ID', 'ARTIFACT_NAME', 'READINESS_RECORD')}
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('\nRelease evidence:\n\n```json\n' + json.dumps(evidence, indent=2) + '\n```\n')
+          PY
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the artifact already built and reviewed
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+        with:
+          artifact_name: ${{ needs.build.outputs.artifact_name }}
