@@ -1069,7 +1069,19 @@ background-position:
 
     }
 
-  </style>
+  
+/* Keep every navigation destination available at narrow widths. */
+html { scroll-padding-top: calc(var(--nav-height) + 24px); }
+.main-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.site-header a:focus-visible { outline: 3px solid var(--explorer-gold); outline-offset: 3px; border-radius: 4px; }
+@media (max-width: 900px) {
+  .site-header { position: relative; height: auto; flex-direction: column; gap: 12px; padding: 14px 5%; background-color: var(--deep-space); }
+  .main-nav { display: flex; width: 100%; flex-wrap: wrap; justify-content: center; gap: 4px; }
+  .main-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 8px; font-size: .8rem; letter-spacing: .08em; }
+  .hero { padding-top: 48px; }
+  html { scroll-padding-top: 16px; }
+}
+</style>
 </head>
 
 
