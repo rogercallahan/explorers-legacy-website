@@ -349,9 +349,15 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
   .brand-name { font-size: .76rem; }
   .compass-mark, .compass-mark img { width: 44px; height: 44px; }
 }
+
+/* Reveal the keyboard shortcut when focused. */
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 2000; transform: translateY(calc(-100% - 24px)); padding: 12px 18px; background: #F4EBD2; color: #0D1B2A; font-weight: 700; border: 2px solid #0D1B2A; border-radius: 4px; }
+.skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
+#main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
 </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 <header>
 <a
     class="brand"
@@ -399,7 +405,7 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
 </p>
     </div>
 </section>
-<main class="about-main">
+<main class="about-main" id="main-content" tabindex="-1">
 <section class="about-section">
     <div class="section-label">Our Beginning</div>
     <h2>Why Explorers Legacy Exists</h2>

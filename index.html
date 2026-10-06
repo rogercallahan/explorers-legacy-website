@@ -1086,11 +1086,17 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
 @media (max-width: 600px) and (orientation: portrait) {
  .hero { background-image: linear-gradient(90deg, rgba(3,12,22,0.41), rgba(3,12,22,0.28)), url("assets/images/els-homepage-hero.png"); }
 }
+
+/* Reveal the keyboard shortcut when focused. */
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 2000; transform: translateY(calc(-100% - 24px)); padding: 12px 18px; background: #F4EBD2; color: #0D1B2A; font-weight: 700; border: 2px solid #0D1B2A; border-radius: 4px; }
+.skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
+#main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
 </style>
 </head>
 
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
 
   <!-- =======================================================
@@ -1161,7 +1167,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
        HERO
        ======================================================= -->
 
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <section
       class="hero"
