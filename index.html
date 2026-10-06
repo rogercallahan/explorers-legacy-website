@@ -1081,6 +1081,11 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
   .hero { padding-top: 48px; }
   html { scroll-padding-top: 16px; }
 }
+
+/* Portrait phone preview: reduce shading without changing landscape. */
+@media (max-width: 600px) and (orientation: portrait) {
+ .hero { background-image: linear-gradient(90deg, rgba(3,12,22,0.41), rgba(3,12,22,0.28)), url("assets/images/els-homepage-hero.png"); }
+}
 </style>
 </head>
 
