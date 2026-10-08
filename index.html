@@ -1398,6 +1398,18 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
   </footer>
 
 
+
+<script>
+  // Explicit focus transfer supplements the native anchor for keyboard users.
+  document.querySelector('.skip-link').addEventListener('click', function (event) {
+    var mainContent = document.getElementById('main-content');
+    if (!mainContent) return;
+    event.preventDefault();
+    mainContent.focus({ preventScroll: true });
+    mainContent.scrollIntoView({ block: 'start', behavior: 'instant' });
+  });
+</script>
+
 </body>
 
 </html>
