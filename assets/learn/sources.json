@@ -1,0 +1,46 @@
+[
+  {
+    "id": "nasa-constellations",
+    "title": "What Are Constellations?",
+    "site": "NASA Space Place",
+    "url": "https://spaceplace.nasa.gov/constellations/en/",
+    "supports": "Star patterns, differing distances, cultural interpretations, and the changing view from Earth.",
+    "date": "6 Dec. 2022"
+  },
+  {
+    "id": "nasa-katherine-johnson",
+    "title": "Katherine G. Johnson",
+    "site": "NASA",
+    "url": "https://www.nasa.gov/people-of-nasa/katherine-g-johnson/",
+    "supports": "Johnson’s trajectory work, the 1962 Glenn calculation check, and her Langley career.",
+    "date": "25 May 2017"
+  },
+  {
+    "id": "nasa-light-year",
+    "title": "What Is a Light-Year?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/exoplanets/what-is-a-light-year/",
+    "supports": "A light-year measures distance traveled by light over a year."
+  },
+  {
+    "id": "nasa-transit",
+    "title": "What’s a Transit?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/exoplanets/whats-a-transit/",
+    "supports": "How a planet passing in front of its star changes measured brightness."
+  },
+  {
+    "id": "nasa-voyager-interstellar",
+    "title": "Interstellar Mission",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/interstellar-mission/",
+    "supports": "Voyager crossings of the heliopause and the interstellar mission."
+  },
+  {
+    "id": "nasa-voyager-boundary",
+    "title": "Did You Know?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/did-you-know/",
+    "supports": "The distinction between the heliopause and the solar system’s outer reaches."
+  }
+]
