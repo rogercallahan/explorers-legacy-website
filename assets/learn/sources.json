@@ -42,5 +42,49 @@
     "site": "NASA Science",
     "url": "https://science.nasa.gov/mission/voyager/did-you-know/",
     "supports": "The distinction between the heliopause and the solar system’s outer reaches."
+  },
+  {
+    "id": "nasa-webb-instruments",
+    "title": "Webb’s Scientific Instruments",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/webb/science-overview/science-explainers/webbs-scientific-instruments/",
+    "supports": "Mirrors, detectors, cameras, spectrographs, filters, and coronagraphs.",
+    "anchor": "telescope-light-p1"
+  },
+  {
+    "id": "nasa-voyager-spacecraft",
+    "title": "Spacecraft",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/spacecraft/",
+    "supports": "Voyager antenna pointing and the declining electrical-power budget.",
+    "anchor": "voyager-design-p1"
+  },
+  {
+    "id": "nasa-webb-sound",
+    "author": "NASA Webb Mission Team",
+    "title": "NASA Webb’s First Full Color Images, Data Are Set to Sound",
+    "date": "31 Aug. 2022",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/missions/webb/nasa-webbs-first-full-color-images-data-are-set-to-sound/",
+    "supports": "Sonification rules, Cosmic Cliffs example, collaboration, and the distinction from recorded sound.",
+    "anchor": "sonification-p1"
+  },
+  {
+    "id": "photo-cliffs",
+    "title": "“Cosmic Cliffs” in the Carina Nebula (NIRCam Image)",
+    "date": "12 July 2022",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/asset/webb/cosmic-cliffs-in-the-carina-nebula-nircam-image/",
+    "supports": "Infrared image and credit: NASA, ESA, CSA, STScI.",
+    "anchor": "cliffs-photo"
+  },
+  {
+    "id": "photo-voyager",
+    "title": "Voyager 2 Encapsulation",
+    "date": "5 July 2017",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/photojournal/voyager-2-encapsulation/",
+    "supports": "Archival assembly photograph and credit: NASA/JPL-Caltech.",
+    "anchor": "voyager-photo"
   }
 ]
