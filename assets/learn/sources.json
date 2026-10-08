@@ -137,5 +137,24 @@
     "supports": "NASA’s predicted November 18, 2026 one-light-day milestone.",
     "anchor": "voyager-light-day",
     "site": "NASA Science"
+  },
+  {
+    "id": "orion-rotation-source",
+    "author": "Summers, Frank",
+    "title": "The True Shape of Orion",
+    "site": "NASA Science",
+    "date": "20 Feb. 2014",
+    "url": "https://science.nasa.gov/asset/hubble/the-true-shape-of-orion/",
+    "supports": "Rotating scientific visualization of Orion; video credit F. Summers (STScI).",
+    "anchor": "orion-depth"
+  },
+  {
+    "id": "orion-distances-source",
+    "author": "NASA",
+    "title": "Discovering the Universe Through the Constellation Orion",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/universe/stories/quick-reads/discovering-the-universe-through-the-constellation-orion/",
+    "supports": "Rounded Earth-distance estimates for Alnitak, Alnilam, and Mintaka.",
+    "anchor": "orion-distance-table-note"
   }
 ]
