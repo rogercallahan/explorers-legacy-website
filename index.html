@@ -1091,6 +1091,8 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 2000; transform: translateY(calc(-100% - 24px)); padding: 12px 18px; background: #F4EBD2; color: #0D1B2A; font-weight: 700; border: 2px solid #0D1B2A; border-radius: 4px; }
 .skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
 #main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
+
+.nav-learn-group{display:inline-flex;align-items:center;gap:6px;flex-wrap:nowrap}.main-nav .new-content-badge{font-size:.65rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#081521;background:#d4af37;border-radius:999px;padding:4px 8px;min-height:28px;line-height:1.2}.main-nav .new-content-badge::after{display:none}.main-nav .new-content-badge:hover,.main-nav .new-content-badge:focus-visible{box-shadow:0 0 12px rgba(212,175,55,.35);outline:2px solid #f4ebd2;outline-offset:3px}
 </style>
 </head>
 
@@ -1146,9 +1148,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
         Games
       </a>
 
-      <a href="#learn">
-        Learn
-      </a>
+      <span class="nav-learn-group"><a href="#learn">Learn</a><a class="new-content-badge" href="learn.html#science" aria-label="New Learn content: constellations and space discoveries">New</a></span>
 
       <a href="about.html">
         About
