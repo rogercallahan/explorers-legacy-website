@@ -156,5 +156,14 @@
     "url": "https://science.nasa.gov/universe/stories/quick-reads/discovering-the-universe-through-the-constellation-orion/",
     "supports": "Rounded Earth-distance estimates for Alnitak, Alnilam, and Mintaka.",
     "anchor": "orion-distance-table-note"
+  },
+  {
+    "id": "nasa-transit-confirmation",
+    "title": "10 Steps to Confirm a Planet Around Another Star",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/universe/exoplanets/10-steps-to-confirm-a-planet-around-another-star/",
+    "date": "24 Sept. 2018",
+    "supports": "Other explanations for brightness dips and follow-up observations.",
+    "anchor": "transit-confirmation"
   }
 ]
