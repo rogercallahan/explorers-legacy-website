@@ -1148,7 +1148,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
         Games
       </a>
 
-      <span class="nav-learn-group"><a id="learn-newest-link" href="learn.html#sky-viewpoint" data-content-version="learn-2026-10-08" aria-label="Learn: newest articles"><span class="learn-label">Lear<span class="learn-final-letter">n<span class="new-content-dot" aria-hidden="true"></span></span></span></a></span>
+      <span class="nav-learn-group"><a id="learn-newest-link" href="learn.html" data-newest-url="learn.html#sky-viewpoint" data-content-version="learn-2026-10-08" aria-label="Learn: newest articles"><span class="learn-label">Lear<span class="learn-final-letter">n<span class="new-content-dot" aria-hidden="true"></span></span></span></a></span>
 
       <a href="about.html">
         About
@@ -1411,6 +1411,6 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
   });
 </script>
 
-<script>(function(){var link=document.getElementById("learn-newest-link");if(!link)return;var dot=link.querySelector(".new-content-dot");var key="els-learn-seen";var version=link.dataset.contentVersion;try{dot.hidden=localStorage.getItem(key)===version;}catch(e){}link.title=dot.hidden?"Explore Learn articles":"New Learn articles available";link.addEventListener("click",function(){dot.hidden=true;try{localStorage.setItem(key,version);}catch(e){}});})();</script></body>
+<script>(function(){var link=document.getElementById("learn-newest-link");if(!link)return;var dot=link.querySelector(".new-content-dot");var key="els-learn-seen";var version=link.dataset.contentVersion;var seen=false;function update(){try{seen=localStorage.getItem(key)===version;}catch(e){}dot.hidden=seen;link.setAttribute("href",seen?"learn.html":link.dataset.newestUrl);link.title=seen?"Explore Learn articles":"New Learn articles available";link.setAttribute("aria-label",seen?"Learn":"Learn: newest articles");}update();window.addEventListener("pageshow",update);link.addEventListener("click",function(){seen=true;dot.hidden=true;try{localStorage.setItem(key,version);}catch(e){}setTimeout(update,0);});})();</script></body>
 
 </html>
