@@ -1,0 +1,8 @@
+{
+  "status": "ready",
+  "reviewed_commit": "adb0e00cdfc5c0ab059adfc37636e2a203dbb41b",
+  "atlas_concurrence": "Atlas concurs with release of the reviewed STEAM Learn and Sources pages and simplified release workflow. Roger reviewed all articles and navigation, accepted the Mathematics expansions, and explicitly requested publication on 8 October 2026. Phone review will follow publication.",
+  "verification": "Seven local checks pass; GitHub PR build for reviewed commit passed (run 37817852369). Roger confirmed article readability, sources and image links, search/date browsing, notification placement and navigation, and revised transit diagram. Mobile device review remains pending and is planned after publication.",
+  "known_good_commit": "3c9dadaadff7739d2aecc6c31d04e40520b099d9",
+  "recovery": "Restore affected pages and workflow from known-good commit through a reviewed PR. Roger authorizes recovery deployment."
+}

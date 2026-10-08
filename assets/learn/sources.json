@@ -1,0 +1,177 @@
+[
+  {
+    "id": "nasa-constellations",
+    "title": "What Are Constellations?",
+    "site": "NASA Space Place",
+    "url": "https://spaceplace.nasa.gov/constellations/en/",
+    "supports": "Star patterns, differing distances, cultural interpretations, and the changing view from Earth.",
+    "date": "6 Dec. 2022"
+  },
+  {
+    "id": "nasa-katherine-johnson",
+    "title": "Katherine G. Johnson",
+    "site": "NASA",
+    "url": "https://www.nasa.gov/people-of-nasa/katherine-g-johnson/",
+    "supports": "Human-computer work, flight-test analysis, Mercury trajectories, Glenn’s calculation check, and Apollo rendezvous calculations.",
+    "date": "25 May 2017"
+  },
+  {
+    "id": "nasa-light-year",
+    "title": "What Is a Light-Year?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/exoplanets/what-is-a-light-year/",
+    "supports": "Light-year distance, light travel time, and approximate Sun-to-Earth light travel time."
+  },
+  {
+    "id": "nasa-transit",
+    "title": "What’s a Transit?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/exoplanets/whats-a-transit/",
+    "supports": "How a planet passing in front of its star changes measured brightness."
+  },
+  {
+    "id": "nasa-voyager-interstellar",
+    "title": "Interstellar Mission",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/interstellar-mission/",
+    "supports": "Voyager crossings of the heliopause and the interstellar mission."
+  },
+  {
+    "id": "nasa-voyager-boundary",
+    "title": "Did You Know?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/did-you-know/",
+    "supports": "The distinction between the heliopause and the solar system’s outer reaches."
+  },
+  {
+    "id": "nasa-webb-instruments",
+    "title": "Webb’s Scientific Instruments",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/webb/science-overview/science-explainers/webbs-scientific-instruments/",
+    "supports": "Mirrors, detectors, cameras, spectrographs, filters, and coronagraphs.",
+    "anchor": "telescope-light-p1"
+  },
+  {
+    "id": "nasa-voyager-spacecraft",
+    "title": "Spacecraft",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/spacecraft/",
+    "supports": "Voyager antenna pointing and the declining electrical-power budget.",
+    "anchor": "voyager-design-p1"
+  },
+  {
+    "id": "nasa-webb-sound",
+    "author": "NASA Webb Mission Team",
+    "title": "NASA Webb’s First Full Color Images, Data Are Set to Sound",
+    "date": "31 Aug. 2022",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/missions/webb/nasa-webbs-first-full-color-images-data-are-set-to-sound/",
+    "supports": "Sonification rules, Cosmic Cliffs example, collaboration, and the distinction from recorded sound.",
+    "anchor": "sonification-p1"
+  },
+  {
+    "id": "photo-cliffs",
+    "title": "“Cosmic Cliffs” in the Carina Nebula (NIRCam Image)",
+    "date": "12 July 2022",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/asset/webb/cosmic-cliffs-in-the-carina-nebula-nircam-image/",
+    "supports": "Infrared image and credit: NASA, ESA, CSA, STScI.",
+    "anchor": "cliffs-photo"
+  },
+  {
+    "id": "photo-voyager",
+    "title": "Voyager 2 Encapsulation",
+    "date": "5 July 2017",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/photojournal/voyager-2-encapsulation/",
+    "supports": "Archival assembly photograph and credit: NASA/JPL-Caltech.",
+    "anchor": "voyager-photo"
+  },
+  {
+    "id": "voyager-profile-source",
+    "title": "spacecraft-profile",
+    "url": "https://science.nasa.gov/image-detail/spacecraft-profile-3/",
+    "supports": "Full spacecraft view; image credit NASA/JPL-Caltech.",
+    "anchor": "voyager-profile",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-overview",
+    "title": "Golden Record Overview",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview/",
+    "supports": "The gold-plated copper record and its intended message.",
+    "anchor": "golden-record-material",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-image",
+    "title": "Voyager Golden Record",
+    "date": "4 Dec. 2017",
+    "url": "https://science.nasa.gov/resource/voyager-golden-record/",
+    "supports": "Record and protective cover image; credit NASA/JPL-Caltech.",
+    "anchor": "golden-record-photo",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-cover-source",
+    "title": "Golden Record Cover",
+    "url": "https://science.nasa.gov/mission/voyager/golden-record-cover/",
+    "supports": "Playback, picture reconstruction, pulsar map, and hydrogen reference diagrams.",
+    "anchor": "golden-record-cover",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-inscription-source",
+    "author": "Cooper, Julie",
+    "title": "Voyager Golden Record Inscription - 1977",
+    "date": "29 Oct. 2015",
+    "site": "NASA Jet Propulsion Laboratory",
+    "url": "https://www.jpl.nasa.gov/blog/2015/10/voyager-golden-record-inscription-1977",
+    "supports": "Handwritten inscription and historical image.",
+    "anchor": "golden-record-inscription"
+  },
+  {
+    "id": "voyager-light-day-source",
+    "title": "Voyager 1: What Is a Light-Day",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+    "supports": "NASA’s predicted November 18, 2026 one-light-day milestone.",
+    "anchor": "voyager-light-day",
+    "site": "NASA Science"
+  },
+  {
+    "id": "orion-rotation-source",
+    "author": "Summers, Frank",
+    "title": "The True Shape of Orion",
+    "site": "NASA Science",
+    "date": "20 Feb. 2014",
+    "url": "https://science.nasa.gov/asset/hubble/the-true-shape-of-orion/",
+    "supports": "Rotating scientific visualization of Orion; video credit F. Summers (STScI).",
+    "anchor": "orion-depth"
+  },
+  {
+    "id": "orion-distances-source",
+    "author": "NASA",
+    "title": "Discovering the Universe Through the Constellation Orion",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/universe/stories/quick-reads/discovering-the-universe-through-the-constellation-orion/",
+    "supports": "Rounded Earth-distance estimates for Alnitak, Alnilam, and Mintaka.",
+    "anchor": "orion-distance-table-note"
+  },
+  {
+    "id": "nasa-transit-confirmation",
+    "title": "10 Steps to Confirm a Planet Around Another Star",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/universe/exoplanets/10-steps-to-confirm-a-planet-around-another-star/",
+    "date": "24 Sept. 2018",
+    "supports": "Other explanations for brightness dips and follow-up observations.",
+    "anchor": "transit-confirmation"
+  },
+  {
+    "id": "nist-light-speed",
+    "title": "CODATA Value: Speed of Light in Vacuum",
+    "site": "NIST",
+    "url": "https://physics.nist.gov/cuu/Constants/Value/c.html",
+    "supports": "Exact vacuum speed; ELS converts and rounds miles-per-second and miles-per-hour values.",
+    "anchor": "light-speed"
+  }
+]
