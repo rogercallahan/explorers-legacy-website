@@ -1,0 +1,8 @@
+{
+  "status": "hold",
+  "reviewed_commit": "",
+  "atlas_concurrence": "Awaiting illustrated article and release-process review.",
+  "verification": "Local checks pending.",
+  "known_good_commit": "3c9dadaadff7739d2aecc6c31d04e40520b099d9",
+  "recovery": "Restore affected pages and workflow from known-good commit through a reviewed PR. Roger authorizes recovery deployment."
+}
