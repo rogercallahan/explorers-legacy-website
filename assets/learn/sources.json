@@ -86,5 +86,56 @@
     "url": "https://science.nasa.gov/photojournal/voyager-2-encapsulation/",
     "supports": "Archival assembly photograph and credit: NASA/JPL-Caltech.",
     "anchor": "voyager-photo"
+  },
+  {
+    "id": "voyager-profile-source",
+    "title": "spacecraft-profile",
+    "url": "https://science.nasa.gov/image-detail/spacecraft-profile-3/",
+    "supports": "Full spacecraft view; image credit NASA/JPL-Caltech.",
+    "anchor": "voyager-profile",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-overview",
+    "title": "Golden Record Overview",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview/",
+    "supports": "The gold-plated copper record and its intended message.",
+    "anchor": "golden-record-material",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-image",
+    "title": "Voyager Golden Record",
+    "date": "4 Dec. 2017",
+    "url": "https://science.nasa.gov/resource/voyager-golden-record/",
+    "supports": "Record and protective cover image; credit NASA/JPL-Caltech.",
+    "anchor": "golden-record-photo",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-cover-source",
+    "title": "Golden Record Cover",
+    "url": "https://science.nasa.gov/mission/voyager/golden-record-cover/",
+    "supports": "Playback, picture reconstruction, pulsar map, and hydrogen reference diagrams.",
+    "anchor": "golden-record-cover",
+    "site": "NASA Science"
+  },
+  {
+    "id": "golden-record-inscription-source",
+    "author": "Cooper, Julie",
+    "title": "Voyager Golden Record Inscription - 1977",
+    "date": "29 Oct. 2015",
+    "site": "NASA Jet Propulsion Laboratory",
+    "url": "https://www.jpl.nasa.gov/blog/2015/10/voyager-golden-record-inscription-1977",
+    "supports": "Handwritten inscription and historical image.",
+    "anchor": "golden-record-inscription"
+  },
+  {
+    "id": "voyager-light-day-source",
+    "title": "Voyager 1: What Is a Light-Day",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+    "supports": "NASA’s predicted November 18, 2026 one-light-day milestone.",
+    "anchor": "voyager-light-day",
+    "site": "NASA Science"
   }
 ]
