@@ -12,7 +12,7 @@
     "title": "Katherine G. Johnson",
     "site": "NASA",
     "url": "https://www.nasa.gov/people-of-nasa/katherine-g-johnson/",
-    "supports": "Johnson’s trajectory work, the 1962 Glenn calculation check, and her Langley career.",
+    "supports": "Human-computer work, flight-test analysis, Mercury trajectories, Glenn’s calculation check, and Apollo rendezvous calculations.",
     "date": "25 May 2017"
   },
   {
@@ -20,7 +20,7 @@
     "title": "What Is a Light-Year?",
     "site": "NASA Science",
     "url": "https://science.nasa.gov/exoplanets/what-is-a-light-year/",
-    "supports": "A light-year measures distance traveled by light over a year."
+    "supports": "Light-year distance, light travel time, and approximate Sun-to-Earth light travel time."
   },
   {
     "id": "nasa-transit",
@@ -165,5 +165,13 @@
     "date": "24 Sept. 2018",
     "supports": "Other explanations for brightness dips and follow-up observations.",
     "anchor": "transit-confirmation"
+  },
+  {
+    "id": "nist-light-speed",
+    "title": "CODATA Value: Speed of Light in Vacuum",
+    "site": "NIST",
+    "url": "https://physics.nist.gov/cuu/Constants/Value/c.html",
+    "supports": "Exact vacuum speed; ELS converts and rounds miles-per-second and miles-per-hour values.",
+    "anchor": "light-speed"
   }
 ]
