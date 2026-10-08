@@ -1092,7 +1092,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
 .skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
 #main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
 
-.nav-learn-group{display:inline-flex;align-items:center;gap:6px;flex-wrap:nowrap}.main-nav .new-content-badge{font-size:.65rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#081521;background:#d4af37;border-radius:999px;padding:4px 8px;min-height:28px;line-height:1.2}.main-nav .new-content-badge::after{display:none}.main-nav .new-content-badge:hover,.main-nav .new-content-badge:focus-visible{box-shadow:0 0 12px rgba(212,175,55,.35);outline:2px solid #f4ebd2;outline-offset:3px}
+#learn-newest-link{position:relative}.main-nav .new-content-dot{position:absolute;right:-7px;top:5px;width:8px;height:8px;border-radius:50%;background:#d4af37;box-shadow:0 0 5px rgba(212,175,55,.25);pointer-events:none}.new-content-dot[hidden]{display:none}
 </style>
 </head>
 
@@ -1148,7 +1148,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
         Games
       </a>
 
-      <span class="nav-learn-group"><a href="#learn">Learn</a><a class="new-content-badge" href="learn.html#science" aria-label="New Learn content: constellations and space discoveries">New</a></span>
+      <span class="nav-learn-group"><a id="learn-newest-link" href="learn.html#sky-viewpoint" data-content-version="learn-2026-10-08" aria-label="Learn: newest articles">Learn<span class="new-content-dot" aria-hidden="true"></span></a></span>
 
       <a href="about.html">
         About
@@ -1411,6 +1411,6 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
   });
 </script>
 
-</body>
+<script>(function(){var link=document.getElementById("learn-newest-link");if(!link)return;var dot=link.querySelector(".new-content-dot");var key="els-learn-seen";var version=link.dataset.contentVersion;try{dot.hidden=localStorage.getItem(key)===version;}catch(e){}link.title=dot.hidden?"Explore Learn articles":"New Learn articles available";link.addEventListener("click",function(){dot.hidden=true;try{localStorage.setItem(key,version);}catch(e){}});})();</script></body>
 
 </html>
