@@ -173,5 +173,13 @@
     "url": "https://physics.nist.gov/cuu/Constants/Value/c.html",
     "supports": "Exact vacuum speed; ELS converts and rounds miles-per-second and miles-per-hour values.",
     "anchor": "light-speed"
+  },
+  {
+    "id": "warwick-green-star",
+    "title": "Green, pink and purple: astronomers reveal the surprising true colours of white dwarf stars",
+    "site": "University of Warwick",
+    "url": "https://warwick.ac.uk/news/pressreleases/astronomers-reveal-true-colours-of-white-dwarf-stars/",
+    "supports": "WD J1330+6435, modeled green appearance, atmospheric absorption, and spectra interpreted through human color vision modeling.",
+    "anchor": "first-green-star"
   }
 ]
