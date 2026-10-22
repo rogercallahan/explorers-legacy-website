@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "809645a7caa7fd56b2fa282e45c1e3346449386c",
-  "atlas_concurrence": "Atlas concurs with release of the green-star article and source additions at the reviewed commit. Article claims were checked against the University of Warwick report on 16 October 2026. Publication remains subject to Roger's github-pages environment approval.",
-  "verification": "Seven release tests pass on the merged content. Website reference validation and preview staging pass. Reviewed the article, library entry, source registry and citation changes. No browser or phone visual review was performed in this review.",
+  "reviewed_commit": "007bdcc8373599ca11025b4bb6512a3528fab29e",
+  "atlas_concurrence": "Codex reviewed the ELS contact email addition in pull request #9. The only content change is the homepage footer email link; other differences are line endings. Publication remains subject to Roger's github-pages environment approval.",
+  "verification": "Compared the email change against the previous homepage. The mailto link and displayed address both use info@explorerslegacystudios.com. The pull request build passed. The merged release run passed safeguard tests and reference validation, then stopped because its review record was outdated. No visual preview was performed.",
   "known_good_commit": "3c9dadaadff7739d2aecc6c31d04e40520b099d9",
   "recovery": "Restore affected pages from known_good_commit through a reviewed PR. Roger authorizes recovery deployment."
 }
