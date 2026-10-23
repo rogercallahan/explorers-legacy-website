@@ -3,7 +3,7 @@ import argparse, hashlib, json, os, pathlib, re, shutil, subprocess
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 
-PAGES = ('index.html', 'about.html', 'learn.html', 'sources.html')
+PAGES = ('index.html', 'about.html', 'learn.html', 'sources.html', 'signals-in-the-sky.html')
 RECORD = '.els-release-readiness.json'
 
 class Document(HTMLParser):
