@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "fbf9fcb0743ce3e8d148dbe0257b82522e3c20c0",
-  "atlas_concurrence": "Atlas reviewed the text-only brand consistency change: Explorers Legacy replaces the apostrophized brand in the discovery card, telescope alternative text, and an asset comment. Roger requested this cleanup after the consistency audit. Existing Signals in the Sky content and imagery are unchanged. Roger retains final PR review and github-pages deployment approval.",
-  "verification": "Compared each changed line against the audited main snapshot. Only three brand references in index.html changed; no markup structure, links, image bytes, or page behavior changed. No remaining apostrophized Legacy brand references were found in the 11 audited website text files after the substitutions. PR checks must pass before merge. No new visual browser review claimed.",
-  "known_good_commit": "2d2d8222dce510aabdb590be15825d6ba19a4593",
-  "recovery": "Restore website content and release configuration from known_good_commit through a reviewed PR if needed. Roger authorizes deployment; retain github-pages environment approval."
+  "reviewed_commit": "728b628a48ee26511a0721b36b4e379b23b1ceea",
+  "atlas_concurrence": "Atlas reviewed the gold Studios header correction requested by Roger. Home subtitle uses explorer-gold; Learn, Sources, and Signals headers wrap only STUDIOS in a gold span. About already uses explorer-gold. Roger retains final PR review and deployment approval.",
+  "verification": "Inspected all five page headers and scoped CSS. Only the Studios color changes; text, links, layout values, and images remain unchanged. Await passing PR checks. No browser visual check claimed.",
+  "known_good_commit": "eb3f4e64211a840581e5953a28485f1ad702e6fc",
+  "recovery": "Restore known_good_commit through a reviewed PR if needed. Retain Roger's github-pages deployment approval."
 }
