@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "9c8672bd3ec9ac5360f97f34000547fc91054aeb",
-  "atlas_concurrence": "Atlas reviewed the Signals in the Sky content merged through PR #11 and the removal of four unused altered screenshots. Roger reported reviewing the preview and merged PR #11. The page uses the original unmodified GLT800 map screenshot with linked Flightradar24 attribution and retained on-screen credits. Roger supplied a phone handoff reporting Ian Petchenik's permission with unmodified-map and attribution conditions; retain the original email in private project records. Final publication remains subject to Roger's github-pages environment approval.",
-  "verification": "Reviewed the exact merged page and changed-file list, new Learn entry, and release-page inclusion. Local checks passed for project links, anchors, image files, alternative text, and byte-identical original map embedded in the preview. PR builds passed previously; merged run 40145875155 passed safeguard tests and site validation before stopping at the outdated readiness record. Four unused cropped/covered screenshots are removed from the release payload. Roger performed visual review; Atlas could not perform desktop/mobile browser visual inspection because local browser access was blocked.",
-  "known_good_commit": "0063c600db4f5e94ecc16fea9889837c64457200",
-  "recovery": "Restore website content and release configuration from known_good_commit through a reviewed PR if recovery is needed. Roger authorizes recovery deployment; do not bypass the github-pages environment approval."
+  "reviewed_commit": "fbf9fcb0743ce3e8d148dbe0257b82522e3c20c0",
+  "atlas_concurrence": "Atlas reviewed the text-only brand consistency change: Explorers Legacy replaces the apostrophized brand in the discovery card, telescope alternative text, and an asset comment. Roger requested this cleanup after the consistency audit. Existing Signals in the Sky content and imagery are unchanged. Roger retains final PR review and github-pages deployment approval.",
+  "verification": "Compared each changed line against the audited main snapshot. Only three brand references in index.html changed; no markup structure, links, image bytes, or page behavior changed. No remaining apostrophized Legacy brand references were found in the 11 audited website text files after the substitutions. PR checks must pass before merge. No new visual browser review claimed.",
+  "known_good_commit": "2d2d8222dce510aabdb590be15825d6ba19a4593",
+  "recovery": "Restore website content and release configuration from known_good_commit through a reviewed PR if needed. Roger authorizes deployment; retain github-pages environment approval."
 }
