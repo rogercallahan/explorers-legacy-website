@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "728b628a48ee26511a0721b36b4e379b23b1ceea",
-  "atlas_concurrence": "Atlas reviewed the gold Studios header correction requested by Roger. Home subtitle uses explorer-gold; Learn, Sources, and Signals headers wrap only STUDIOS in a gold span. About already uses explorer-gold. Roger retains final PR review and deployment approval.",
-  "verification": "Inspected all five page headers and scoped CSS. Only the Studios color changes; text, links, layout values, and images remain unchanged. Await passing PR checks. No browser visual check claimed.",
-  "known_good_commit": "eb3f4e64211a840581e5953a28485f1ad702e6fc",
-  "recovery": "Restore known_good_commit through a reviewed PR if needed. Retain Roger's github-pages deployment approval."
+  "reviewed_commit": "f2f94c6c6e10898d3180f9585e0822e20bf2ea6e",
+  "atlas_concurrence": "Atlas reviewed the requested header consistency change. Learn, Sources, and Signals use the existing circular compass asset with a stacked Explorers Legacy / gold Studios wordmark and matching navigation styling. Roger retains PR review and github-pages deployment approval.",
+  "verification": "Checked each page has exactly one replacement header, preserved all non-header HTML byte for byte, and retained the five navigation destinations. Scoped masthead rules keep article navigation styles unchanged and wrap the main navigation at 1000px, with smaller text at 380px. Existing compass image is reused with fixed dimensions and a decorative alt because the link has an accessible name. Browser visual verification was not performed; PR checks must pass before merge.",
+  "known_good_commit": "ad6a6190235dc9b2a19711ba4356d2141756c633",
+  "recovery": "Restore known_good_commit through a reviewed PR if required. Retain Roger's final github-pages deployment approval."
 }

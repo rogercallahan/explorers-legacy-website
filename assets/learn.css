@@ -12,4 +12,17 @@ header{padding:20px max(5vw,20px);border-bottom:1px solid #40515d;background:#08
 
 .distance-table-wrap{overflow-x:auto}.distance-table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.9rem}.distance-table caption{text-align:left;color:var(--teal);padding-bottom:10px}.distance-table th,.distance-table td{padding:12px;text-align:left;border-bottom:1px solid #40515d}.distance-table thead{color:var(--gold)}
 
-header .brand .brand-studios{color:var(--gold)}
+
+/* Shared ELS masthead for the learning pages. */
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;padding:18px 8%;min-height:92px;box-sizing:border-box;background:#0d1b2a;border-bottom:1px solid rgba(212,175,55,.18)}
+.site-header .brand{display:flex;align-items:center;gap:14px;min-width:0;letter-spacing:normal;line-height:1.2}
+.site-header .compass-mark{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px}
+.site-header .compass-mark img{display:block;width:54px;height:54px;object-fit:contain}
+.site-header .brand-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+.site-header .brand-name{font-size:1.05rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper)}
+.site-header .brand-subtitle{font-size:.72rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.site-header nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px 28px;margin:0}
+.site-header nav a{color:var(--paper);font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;min-height:44px;align-items:center}
+.site-header nav a:hover,.site-header nav a[aria-current="page"]{color:var(--gold)}
+@media(max-width:1000px){.site-header{flex-wrap:wrap;padding:18px 5%}.site-header nav{width:100%;gap:8px 22px}}
+@media(max-width:380px){.site-header .brand-name{font-size:.9rem}.site-header .brand{gap:10px}.site-header nav{gap:6px 16px}}
