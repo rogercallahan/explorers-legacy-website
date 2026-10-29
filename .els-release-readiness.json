@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "a2b617899ead82d7e679aee437363edf94e50b3e",
-  "atlas_concurrence": "Atlas reviewed the Signals in the Sky wording requested by Roger and merged in PR #16: personal story, captions, photo attribution, alternative text, and evidence attribution now use explorer wording and Southwest Missouri. Third-party credits, permission statements, original image, and evidence limitations remain intact. Roger retains final github-pages deployment approval.",
-  "verification": "Read back merged signals-in-the-sky.html and confirmed no Roger references remain and the caption uses an ELS explorer. PR #16 checks passed. The merged run passed all seven release safeguard tests and site validation before rejecting the stale reviewed_commit. No browser visual verification performed. This record-only change requires passing PR checks.",
-  "known_good_commit": "1090b91f531f9398763e01dbdab7dc778d5dbb2d",
-  "recovery": "Restore known_good_commit through a reviewed PR if required. Retain Roger's final github-pages deployment approval."
+  "reviewed_commit": "b1e4d90539865debf919e65ba40d73628c502af9",
+  "atlas_concurrence": "Atlas reviewed adding the existing Signals in the Sky link as the first entry beneath Learn > Technology. The existing timeline entry and published expedition content remain unchanged. Roger retains final github-pages deployment approval.",
+  "verification": "All seven existing release safeguard tests passed locally. prepare_release.py validated local links, anchors, source references and assets and staged the website successfully in preview mode. Confirmed exactly one new Technology entry pointing to signals-in-the-sky.html. No browser visual verification performed. Passing PR checks and Roger's review remain required.",
+  "known_good_commit": "b0d5d323ba4e39da934232363d6d232a91228317",
+  "recovery": "Restore known_good_commit through a reviewed PR if needed. Roger retains final github-pages deployment approval."
 }
