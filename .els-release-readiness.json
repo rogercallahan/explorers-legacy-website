@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "b1e4d90539865debf919e65ba40d73628c502af9",
-  "atlas_concurrence": "Atlas reviewed adding the existing Signals in the Sky link as the first entry beneath Learn > Technology. The existing timeline entry and published expedition content remain unchanged. Roger retains final github-pages deployment approval.",
-  "verification": "All seven existing release safeguard tests passed locally. prepare_release.py validated local links, anchors, source references and assets and staged the website successfully in preview mode. Confirmed exactly one new Technology entry pointing to signals-in-the-sky.html. No browser visual verification performed. Passing PR checks and Roger's review remain required.",
+  "reviewed_commit": "94ac3605c02d7eef72f40dcec466226fb59914a5",
+  "atlas_concurrence": "Reviewed the new NASA-sourced Science lesson, its timeline entry and linked references. Ready for Roger's review.",
+  "verification": "Verified all three committed content files against the intended copy, parsed the source registry, and checked the lesson and source anchors. The PR workflow checks site references before release. No visual browser test performed.",
   "known_good_commit": "b0d5d323ba4e39da934232363d6d232a91228317",
   "recovery": "Restore known_good_commit through a reviewed PR if needed. Roger retains final github-pages deployment approval."
 }
