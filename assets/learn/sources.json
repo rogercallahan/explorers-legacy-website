@@ -1,5 +1,23 @@
 [
   {
+    "id": "naoj-little-red-dots",
+    "title": "Japanese Supercomputer Explains Webb’s Little Red Dots",
+    "site": "National Astronomical Observatory of Japan",
+    "url": "https://www.nao.ac.jp/en/news/science/2026/20260917-cfca.html",
+    "date": "17 Sept. 2026",
+    "supports": "Webb observations and simulated rapid black-hole growth within dense gas; agreement between model and observations.",
+    "anchor": "webb-little-red-dots"
+  },
+  {
+    "id": "esa-hera-close-up",
+    "title": "Hera’s first close-up view of Didymos asteroids",
+    "site": "European Space Agency",
+    "url": "https://www.esa.int/hu/articles/about-us/directorates/operations/space-safety/hera/hera-s-first-close-up-view-of-didymos-asteroids",
+    "date": "5 Nov. 2026",
+    "supports": "Close-up distance, new hemisphere, visible terrain, shadowed Dimorphos and the unconfirmed ejecta hypothesis.",
+    "anchor": "hera-asteroid-investigation"
+  },
+  {
     "id": "nasa-glow-oxygen",
     "title": "NASA’s Hubble Uncovers Case of Missing Oxygen in Nearby Dwarf Galaxies",
     "site": "NASA Science",
