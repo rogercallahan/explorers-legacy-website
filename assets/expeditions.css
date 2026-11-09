@@ -1,0 +1,37 @@
+/* ELS expedition catalog: existing brand colors, quiet controls, printable activities. */
+.site-header .brand-name{color:#fff}
+.expedition-index{padding-left:1.5rem;columns:2;column-gap:2rem}
+.expedition-index li{break-inside:avoid;margin:.4rem 0}
+.expedition-index a{display:inline-block;min-height:44px;padding:.25rem 0}
+.family-note{padding:1rem 1.25rem;background:#152b3e;border-left:4px solid var(--gold);margin:2rem 0}
+.family-note h2{margin-top:.25rem}
+.expedition{margin:1rem 0;border:1px solid #657785;border-radius:12px;background:#102335;scroll-margin-top:24px}
+.expedition:target{border:2px solid var(--gold)}
+.expedition summary{cursor:pointer;padding:1rem;min-height:56px;font-weight:700;font-size:1.15rem}
+.expedition summary::marker{color:var(--gold)}
+.expedition-id{font-size:.8rem;color:var(--gold);margin-right:.6rem;white-space:nowrap}
+.expedition-body{padding:0 1.25rem 1.5rem}
+.expedition-body h2{font-size:1.4rem;margin-top:1.5rem}
+.expedition-body h3{font-size:1.1rem;color:var(--teal);margin-bottom:.35rem}
+.expedition-body p{margin-top:.35rem}
+.expedition-body li{margin-bottom:.75rem}
+.expedition-meta,.reference-note{font-size:.85rem;color:#d3dfdf}
+.safety{padding:1rem;background:#233648;border-left:3px solid var(--gold)}
+.adaptation{font-size:.95rem}
+.journal{border:1px dashed #657785;padding:1rem;margin:1.5rem 0}
+.expedition-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.expedition-actions a{min-height:44px;display:inline-flex;align-items:center}
+button,input{font:inherit;border-radius:6px;min-height:44px;padding:.6rem .8rem}
+button{background:#233648;color:var(--paper);border:1px solid var(--gold);cursor:pointer}
+input{display:block;width:100%;max-width:34rem;background:#071320;color:var(--paper);border:1px solid #657785;margin:.5rem 0}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+[hidden]{display:none!important}
+@media(max-width:600px){.expedition-index{columns:1}.expedition-body{padding:0 1rem 1rem}main{padding-top:24px}.expedition summary{font-size:1.05rem}}
+@media print{
+ :root{color-scheme:light}body{background:#fff;color:#000;font:12pt/1.45 Georgia,serif}main{max-width:none;padding:0}a{color:#000}header,footer,.skip-link,nav,.expedition-search,.expedition-actions{display:none!important}
+ .family-note{background:#fff;border:1px solid #777}.expedition{display:block!important;background:#fff;border:0;border-top:1px solid #777;break-before:page;border-radius:0}
+ .expedition summary{display:block;color:#000;padding:0;font-size:18pt}.expedition-id,.expedition-body h3,.expedition-meta,.reference-note{color:#000}.expedition-body{padding:0}.expedition h2,.expedition h3{break-after:avoid}.safety{background:#fff;border:1px solid #777}.journal{break-inside:avoid}.journal p{min-height:2rem}
+ body.print-one main>*,body.print-one #catalog-top,body.print-one .expedition:not(.print-selected){display:none!important}
+ body.print-one main>section[aria-label="Expedition instructions"],body.print-one .print-selected{display:block!important}
+ body.print-one .print-selected{break-before:auto;border:0}
+}

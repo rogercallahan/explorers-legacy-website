@@ -22,10 +22,15 @@ class Document(HTMLParser):
             if 'alt' not in a:
                 raise ValueError('Image missing alternative text')
             self.images.append(a.get('src', ''))
+        if tag == 'script' and a.get('src'):
+            self.links.append(a['src'])
+        if tag == 'link' and a.get('href') and a.get('rel') == 'stylesheet':
+            self.links.append(a['href'])
 
 def validate_site(root):
     docs = {}
-    for name in PAGES:
+    expedition_pages = tuple(p.relative_to(root).as_posix() for p in sorted((root / 'expeditions').glob('*.html')))
+    for name in (*PAGES, *expedition_pages):
         doc = Document()
         doc.feed((root / name).read_text(encoding='utf-8'))
         docs[name] = doc
@@ -78,7 +83,7 @@ def readiness(root, candidate):
 
 def stage_site(root, dest):
     dest.mkdir(parents=True, exist_ok=False)
-    for name in (*PAGES, 'assets'):
+    for name in (*PAGES, 'assets', 'expeditions'):
         source = root / name
         if source.is_symlink() or (source.is_dir() and any(p.is_symlink() for p in source.rglob('*'))):
             raise ValueError('Website payload must not contain symbolic links')
@@ -122,3 +127,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
