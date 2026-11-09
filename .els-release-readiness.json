@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "reviewed_commit": "515690a1d8cb483a58a64f302e908ce1aa154c3c",
-  "atlas_concurrence": "Reviewed the NASA Missing Oxygen, Webb little red dots and Hera Science lessons, timeline entries and primary-source references. Observations are distinguished from simulations and hypotheses; activities encourage hands-on evidence gathering. Ready for Roger's review.",
-  "verification": "Read back all three committed content files and verified they match intended copy. Source registry parses successfully. Existing PR workflow must pass site reference, asset and release safeguard checks before merge. No visual browser test performed.",
+  "reviewed_commit": "1b07e6b1a8fbd83a2bc97fb357d483c1ed8a6658",
+  "atlas_concurrence": "Atlas reviewed the 125-entry family STEAM catalog (25 per category; Signals is TEC-001), Learn integration, source framing, safety notes, paper journals, and packaging. Original ELS starting activities, not field-tested or validated learning interventions. Existing three Science articles retained. Ready for Roger's batch review; Roger retains final publication approval.",
+  "verification": "13 Python tests passed locally, including existing release safeguards and expedition count, generation, links and packaging tests. JavaScript syntax passed. All pages staged successfully. Browser checked Learn navigation, Science search, direct-link expansion and desktop layout. Print selection state checked; native print output and physical mobile testing not completed. See docs/STEAM-EXPEDITION-VALIDATION.md.",
   "known_good_commit": "b0d5d323ba4e39da934232363d6d232a91228317",
   "recovery": "Restore known_good_commit through a reviewed PR if needed. Roger retains final github-pages deployment approval."
 }
