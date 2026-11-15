@@ -52,6 +52,30 @@ class ReleaseChecks(unittest.TestCase):
         sources.write_text(sources.read_text(encoding='utf-8').replace('id="nasa-transit"', 'id="removed-transit"'), encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'Missing anchor'):
             release.validate_site(self.root / 'site')
+    def test_locked_wordmark_colors(self):
+        import re
+        files = (
+            SITE / 'index.html',
+            SITE / 'about.html',
+            SITE / 'assets/learn.css',
+            SITE / 'assets/expeditions.css',
+        )
+        for path in files:
+            text = path.read_text(encoding='utf-8')
+            name_rule = re.search(r'\.brand-name\s*\{[^}]*\}', text)
+            self.assertIsNotNone(name_rule, path.name)
+            self.assertRegex(name_rule.group(0), r'#(?:FFFFFF|fff)\b')
+            if path.name == 'expeditions.css':
+                continue
+            subtitle = re.search(r'\.brand-subtitle\s*\{[^}]*\}', text)
+            self.assertIsNotNone(subtitle, path.name)
+            block = subtitle.group(0)
+            self.assertIn('#D4AF37', block)
+            lowered = block.lower()
+            self.assertNotIn('teal', lowered)
+            self.assertNotIn('#2fb6b0', lowered)
+            self.assertNotIn('#65d7d0', lowered)
+
     def test_staged_payload_excludes_workflow(self):
         manifest, digest = release.stage_site(SITE, self.root / 'stage')
         paths = {m['path'] for m in manifest}

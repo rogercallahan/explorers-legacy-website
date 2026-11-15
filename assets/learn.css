@@ -19,8 +19,10 @@ header{padding:20px max(5vw,20px);border-bottom:1px solid #40515d;background:#08
 .site-header .compass-mark{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px}
 .site-header .compass-mark img{display:block;width:54px;height:54px;object-fit:contain}
 .site-header .brand-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
-.site-header .brand-name{font-size:1.05rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper)}
-.site-header .brand-subtitle{font-size:.72rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+/* ELS-23 locked wordmark. The teal link color must not paint this text. */
+.site-header a.brand{color:#FFFFFF;text-decoration:none}
+.site-header .brand-name{font-size:1.05rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF}
+.site-header .brand-subtitle{font-size:.72rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:#D4AF37}
 .site-header nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px 28px;margin:0}
 .site-header nav a{color:var(--paper);font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;min-height:44px;align-items:center}
 .site-header nav a:hover,.site-header nav a[aria-current="page"]{color:var(--gold)}

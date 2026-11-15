@@ -168,10 +168,12 @@
     display: block;
 }
 
+    /* ELS-23 locked wordmark: EXPLORERS LEGACY is white. Do not recolor. */
+
     .brand-name {
 
       color:
-        var(--maple-ivory);
+        #FFFFFF;
 
       font-size:
         1.12rem;
@@ -187,13 +189,15 @@
     }
 
 
+    /* ELS-23 locked wordmark: STUDIOS is Explorer Gold #D4AF37, not Discovery Teal. */
+
     .brand-subtitle {
 
       margin-top:
         7px;
 
       color:
-        var(--explorer-gold);
+        #D4AF37;
 
       font-size:
         0.72rem;
@@ -933,13 +937,6 @@ background-position:
       }
 
 
-      .main-nav {
-
-        display:
-          none;
-      }
-
-
       .hero {
 
         padding:
@@ -1091,6 +1088,12 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 2000; transform: translateY(calc(-100% - 24px)); padding: 12px 18px; background: #F4EBD2; color: #0D1B2A; font-weight: 700; border: 2px solid #0D1B2A; border-radius: 4px; }
 .skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
 #main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
+.button:focus-visible, footer a:focus-visible { outline: 3px solid #D4AF37; outline-offset: 3px; }
+footer a { text-decoration: underline; text-underline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
 
 #learn-newest-link{position:relative}.learn-label{line-height:1}.learn-final-letter{position:relative;display:inline-block}.main-nav .new-content-dot{position:absolute;right:-3px;top:-4px;width:8px;height:8px;border-radius:50%;background:#d4af37;box-shadow:0 0 5px rgba(212,175,55,.25);pointer-events:none}.new-content-dot[hidden]{display:none}
 </style>
@@ -1416,6 +1419,11 @@ html { scroll-padding-top: calc(var(--nav-height) + 24px); }
   });
 </script>
 
+<!-- Browser storage for the Learn marker only.
+     Key: els-learn-seen. Value: the content version string on the Learn link.
+     Purpose: hide the "new articles" dot after this browser opens it.
+     It stores no name, account, or location. It remains until that version
+     changes or the reader clears site data for this browser. -->
 <script>(function(){var link=document.getElementById("learn-newest-link");if(!link)return;var dot=link.querySelector(".new-content-dot");var key="els-learn-seen";var version=link.dataset.contentVersion;var seen=false;function update(){try{seen=localStorage.getItem(key)===version;}catch(e){}dot.hidden=seen;link.setAttribute("href",seen?"learn.html":link.dataset.newestUrl);link.title=seen?"Explore Learn articles":"New Learn articles available";link.setAttribute("aria-label",seen?"Learn":"Learn: newest articles");}update();window.addEventListener("pageshow",update);link.addEventListener("click",function(){seen=true;dot.hidden=true;try{localStorage.setItem(key,version);}catch(e){}setTimeout(update,0);});})();</script></body>
 
 </html>

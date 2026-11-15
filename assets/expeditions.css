@@ -1,5 +1,5 @@
 /* ELS expedition catalog: existing brand colors, quiet controls, printable activities. */
-.site-header .brand-name{color:#fff}
+.site-header .brand-name{color:#FFFFFF}
 .expedition-index{padding-left:1.5rem;columns:2;column-gap:2rem}
 .expedition-index li{break-inside:avoid;margin:.4rem 0}
 .expedition-index a{display:inline-block;min-height:44px;padding:.25rem 0}
