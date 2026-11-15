@@ -27,7 +27,7 @@ Adopted October 26, 2026. There is no grandfathering. Work from before that date
 
 What that requires on this website:
 
-1. Learning comes before time-on-site. No streaks, punishment for leaving, artificial countdowns, social pressure, loot boxes, or notifications whose job is to pull a child back.
+1. Learning comes before time-on-site. No streaks, punishment for leaving, artificial countdowns, social pressure, loot boxes, or notifications whose job is to pull a child back. Site copy must not imply that learning or the adventure is finished, complete, over, or that it ends with something. Point forward. Onward to Discovery.
 2. Expeditions keep a real-world path where it fits: ask or predict, investigate or build, explain independently, check a credited source, and keep only the evidence that is needed. A paper journal is enough. Do not require a child to post proof publicly.
 3. Factual teaching needs a traceable source: URL, date when one exists, review date, and who owns the content. Say what is verified, what is a claim, and what is still uncertain. Do not invent citations or treat an AI answer as evidence.
 4. Do not collect a child's name or other personal data the page does not need. There is no child name field. Address the reader as Explorer. Location, public profiles, behavioral profiling, and third-party sharing stay off. Anything collected needs a purpose, a retention period, a way to delete it, and an owner.
