@@ -140,7 +140,7 @@ Evidence: Home and About at 390px width showed Home, Games, Learn, About, and Co
 
 ELS-33 is the earlier narrative draft. The recovery note says the later mission is the ELS-11 four-part line, and that later website edits remain source evidence. Roger has treated the About page as official. This change does not rewrite it.
 
-What matches: the curiosity opening, why the studio exists, the Explorer-before-the-metric principle, the compass and True North, the oath, no end to discovery, the stepping stone, the legacy continuing, and "Onward to Discovery." The oath and the short purpose line include "and real-world exploration," which matches ELS-11 rather than the shorter ELS-33 line.
+What matches: the curiosity opening, why the studio exists, the Explorer-before-the-metric principle, the compass and True North, no end to discovery, the stepping stone, the legacy continuing, and "Onward to Discovery." The short purpose line and the oath's closing line include "and real-world exploration," which matches ELS-11 rather than the shorter ELS-33 line. Founder approval on 14 November 2026 replaced the oath's "superpower" line with "compass" and added: "Curiosity is our True North. It guides us to explore, to ask why, and to turn the next page." That wording is now on the About page. Home uses "compass" in its shorter True North paragraph and does not repeat the full oath.
 
 What differs:
 
