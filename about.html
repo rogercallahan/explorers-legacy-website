@@ -70,8 +70,9 @@ header {
     flex-direction: column;
 }
 
+/* ELS-23 locked wordmark: EXPLORERS LEGACY white, STUDIOS Explorer Gold #D4AF37. */
 .brand-name {
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 1.05rem;
     font-weight: 800;
     letter-spacing: 0.08em;
@@ -79,7 +80,7 @@ header {
 }
 
 .brand-subtitle {
-    color: var(--explorer-gold);
+    color: #D4AF37;
     font-size: 0.72rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -307,10 +308,6 @@ footer {
         padding: 0 5%;
     }
 
-    nav {
-        display: none;
-    }
-
     .about-hero {
         min-height: 460px;
         padding: 80px 7%;
@@ -354,6 +351,11 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 2000; transform: translateY(calc(-100% - 24px)); padding: 12px 18px; background: #F4EBD2; color: #0D1B2A; font-weight: 700; border: 2px solid #0D1B2A; border-radius: 4px; }
 .skip-link:focus { transform: none; outline: 3px solid #D4AF37; outline-offset: 3px; }
 #main-content:focus { outline: 3px solid #D4AF37; outline-offset: -3px; }
+footer a:focus-visible { outline: 3px solid #D4AF37; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
 </style>
 </head>
 <body>
@@ -388,6 +390,7 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
 <a href="index.html#contact">Contact</a>
 </nav>
 </header>
+<main id="main-content" tabindex="-1">
 <section class="about-hero">
     <div class="about-hero-content">
 <div class="about-eyebrow">
@@ -405,7 +408,7 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
 </p>
     </div>
 </section>
-<main class="about-main" id="main-content" tabindex="-1">
+<div class="about-main">
 <section class="about-section">
     <div class="section-label">Our Beginning</div>
     <h2>Why Explorers Legacy Exists</h2>
@@ -546,13 +549,14 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
     <h2>The Explorer's Oath</h2>
 
     <div class="explorers-oath">
-        <p><strong>We believe curiosity is humanity's greatest superpower.</strong></p>
+        <p><strong>We believe curiosity is humanity's greatest compass.</strong></p>
         <p>Every question opens a door.</p>
         <p>Every discovery builds confidence.</p>
         <p>Every challenge is an opportunity to grow.</p>
         <p>We explore with wonder.</p>
         <p>We learn with purpose.</p>
         <p>We share what we discover.</p>
+        <p><strong>Curiosity is our True North. It guides us to explore, to ask why, and to turn the next page.</strong></p>
         <p><strong>Together...</strong></p>
         <p><strong>We build minds through curiosity, knowledge, play, and real-world exploration.</strong></p>
     </div>
@@ -687,6 +691,7 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; }
     </p>
 </section>
 
+</div>
 </main>
 
 <footer>
