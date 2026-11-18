@@ -601,7 +601,7 @@
         "Compare direct observations with any map information and label each source."
       ],
       "evidence": "An observation, its source and an explanation of a mismatch or missing information.",
-      "explanation": "A digital map and a direct sighting provide different evidence; neither should be treated as a complete picture.",
+      "explanation": "A digital map and a direct sighting provide different evidence; neither should be treated as the whole picture.",
       "extension": "What could explain an aircraft missing from a map?",
       "safety": "Never observe while driving, enter restricted areas or point lights at aircraft. Adults handle online maps; keep exact home coordinates private.",
       "source": "signals",
@@ -2756,7 +2756,7 @@
         "List each shirt-hat pair systematically.",
         "Add a third hat and predict the new total before listing."
       ],
-      "evidence": "A complete pair list and counting rule.",
+      "evidence": "A pair list of every shirt-hat combination, and a counting rule.",
       "explanation": "Independent choices multiply: each shirt can pair with each hat in this model.",
       "extension": "What if one particular pairing is not allowed?",
       "safety": "Use drawings rather than buying or photographing clothing.",

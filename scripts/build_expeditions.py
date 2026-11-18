@@ -44,7 +44,7 @@ def catalog():
 def header(title):
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{ESC(title)} | Explorers Legacy Studios</title><link rel="stylesheet" href="../assets/learn.css"><link rel="stylesheet" href="../assets/expeditions.css">
+<title>{ESC(title)} | Explorers Legacy Studios™</title><link rel="stylesheet" href="../assets/learn.css"><link rel="stylesheet" href="../assets/expeditions.css">
 </head><body><a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header"><a class="brand" href="../index.html" aria-label="Explorers Legacy Studios Home"><span class="compass-mark"><img src="../assets/images/explorer_compass_circle.png" alt="" width="54" height="54"></span><span class="brand-copy"><span class="brand-name">EXPLORERS LEGACY</span><span class="brand-subtitle">STUDIOS</span></span></a><nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="../learn.html">Learn</a><a href="../about.html">About</a></nav></header>
 <main id="main-content" tabindex="-1">'''
@@ -84,7 +84,7 @@ def build():
         title = category + ' Expeditions'
         links = ''.join(f'<a href="{c.lower()}.html"'+ (' aria-current="page"' if c == category else '') + f'>{c} · 25</a>' for c in CATEGORIES)
         index = ''.join(f'<li><a href="#{e["id"]}">{e["id"]} — {ESC(e["title"])}</a></li>' for e in subset)
-        body = f'''<p class="eyebrow">Explorers Legacy Institute · Learn</p><h1>{title}</h1><p class="lede">25 ways to ask, observe, create and explain. Choose what interests you; there is no streak or required order.</p>
+        body = f'''<p class="eyebrow">Explorers Legacy Institute™ · Learn</p><h1>{title}</h1><p class="lede">25 ways to ask, observe, create and explain. Choose what interests you; there is no streak or required order.</p>
 <nav class="section-links" aria-label="STEAM expeditions">{links}</nav>
 <section class="family-note" aria-label="Family guide"><h2>Start together, then explore</h2><p>Read the materials and safety note with a trusted adult. These are starting activities for family use, not tested age certifications or claims of guaranteed learning. Adults choose suitable materials, supervision and locations. Use blunt scissors only with adult help. Keep small parts away from young children and pets.</p><p>Keep observations in your own notebook. This catalog does not ask for an account, collect journal entries, award points or use AI to judge your work. You can print instructions and step away from the screen. Outdoor activities can become window observations when conditions or access make that better.</p></section>
 <section id="catalog-top"><h2>Choose an expedition</h2><div class="expedition-search" hidden><label for="expedition-search">Find a title or expedition ID</label><input id="expedition-search" type="search" placeholder="Search these 25 expeditions"><p id="expedition-count" role="status">25 expeditions</p><button type="button" id="clear-search">Show all expeditions</button></div><ol class="expedition-index">{index}</ol></section>
