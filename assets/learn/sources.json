@@ -160,9 +160,56 @@
     "id": "voyager-light-day-source",
     "title": "Voyager 1: What Is a Light-Day",
     "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
-    "supports": "NASA’s predicted November 18, 2026 one-light-day milestone.",
-    "anchor": "voyager-light-day",
+    "supports": "Light-day definition and exact distance, radio waves at the speed of light, the Sept. 5, 1977 launch, and the 5:16:07 a.m. EST clock time. On 19 Nov. 2026 this page still described the mark as upcoming.",
+    "anchor": "light-day-meaning",
     "site": "NASA Science"
+  },
+  {
+    "id": "nasa-voyager-where",
+    "title": "Where are Voyager 1 and Voyager 2 Now?",
+    "site": "NASA Science",
+    "url": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+    "date": "Reviewed 19 Nov. 2026",
+    "supports": "One-light-day distance of 16.094 billion miles (25.902 billion kilometers) at 2:16:07 a.m. PST on Nov. 18, 2026. On 19 Nov. 2026 the tracker still described that moment as upcoming.",
+    "anchor": "voyager-light-day-reached"
+  },
+  {
+    "id": "nasa-voyager-light-day-release",
+    "author": "Taveau, Jessica",
+    "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
+    "site": "NASA",
+    "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+    "date": "19 Nov. 2026",
+    "supports": "Voyager 1 reached one light-day on Nov. 18, 2026, at 2:16 a.m. PST (5:16 a.m. EST): about 16.1 billion miles (25.9 billion kilometers). A radio signal took about 24 hours. Confirmation used a carrier signal and trajectory calculations after science and engineering data paused on Nov. 14.",
+    "anchor": "voyager-light-day-reached"
+  },
+  {
+    "id": "sciencenews-voyager-light-day",
+    "author": "Tadayon, Mandana",
+    "title": "Voyager 1 reaches a historic milestone: one light-day from Earth",
+    "site": "Science News",
+    "url": "https://www.sciencenews.org/article/voyager-1-light-day-earth-distance",
+    "date": "18 Nov. 2026",
+    "supports": "Independent report that Voyager 1, launched in 1977, reached one light-day and is the farthest human-made object. Not the measurement source for the lesson.",
+    "anchor": "voyager-light-day-distance"
+  },
+  {
+    "id": "els-atlas-voyager-video",
+    "title": "Voyager 1 Reaches One Light-Day from Earth | Atlas Explains",
+    "site": "YouTube",
+    "url": "https://www.youtube.com/watch?v=J-p2C38fU0Q",
+    "date": "Accessed 19 Nov. 2026",
+    "supports": "ELS explanation video. Visuals, voice, and music are AI-generated. Not a measurement source and not a NASA production.",
+    "anchor": "voyager-light-day-video"
+  },
+  {
+    "id": "photo-voyager-light-day",
+    "title": "Voyager 1 one-light-day artist’s concept",
+    "site": "NASA",
+    "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+    "date": "19 Nov. 2026",
+    "supports": "Artist’s concept used with the news release. Credit: NASA/JPL-Caltech. Not a NASA production; no NASA endorsement implied.",
+    "anchor": "voyager-light-day-art"
   },
   {
     "id": "orion-rotation-source",
