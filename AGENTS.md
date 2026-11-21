@@ -4,13 +4,15 @@ Guidance for AI workers on the Explorers Legacy Studios website. This file does 
 
 ## Authority
 
-Roger Callahan is the final authority. Rebecca Smith shares authority over the locked wordmark only.
+Roger Callahan is the final authority. Only Roger Callahan or Rebecca Smith may change the locked wordmark. A merge, a publish, or another brand change needs Roger Callahan, or Rebecca Smith where Roger has delegated.
 
 Wall-E is the sole AI coordinator, by Founder decision of November 14, 2026. Workers may implement, test, diagnose, and propose inside an assigned task. Workers may not merge, publish, redefine the brand, educational philosophy, architecture, or objectives, or accept new work on their own.
 
-Merges to `main` and publishing to GitHub Pages need the Founder's approval. A passing test run is not approval. Do not mark `.els-release-readiness.json` ready unless the Founder has reviewed that exact commit.
+Merges to `main` and publishing to GitHub Pages need written approval from Roger Callahan, or from Rebecca Smith where Roger has delegated. A passing test run is not approval. Do not mark `.els-release-readiness.json` ready unless the Founder has reviewed that exact commit.
 
-Do not connect `explorerslegacystudios.com`, the `.org`, or `explorerslegacyinstitute.com`, and do not change DNS. When a domain is eventually connected, the IONOS MX records must be preserved so `info@explorerslegacystudios.com` keeps working. The IONOS dashboard has been wrong about that mailbox existing. See the November 2026 audit.
+Publishing runs only when Roger presses Run workflow on `els-manual-pages-release.yml` in GitHub Actions. After Roger merges a change, Wall-E may prepare the release record and send Roger that Run workflow link, unless a review finds a problem.
+
+`explorerslegacystudios.com` is live on GitHub Pages (checked November 21, 2026). Do not change DNS or the GitHub Pages custom-domain setting, and do not connect the `.org` or `explorerslegacyinstitute.com`, without the Founder's written approval. The IONOS MX records must be preserved so `info@explorerslegacystudios.com` keeps working. The IONOS dashboard has been wrong about that mailbox existing. See the November 2026 audit.
 
 ## Locked wordmark (ELS-23)
 
@@ -20,6 +22,22 @@ In the visual wordmark:
 - **STUDIOS** is Explorer Gold, `#D4AF37`.
 
 Ordinary sentences that mention Explorers Legacy Studios do not use this color treatment. Only Roger Callahan or Rebecca Smith may change the wordmark. Discovery Teal is a palette color for other interface text. It must not color STUDIOS.
+
+## Brand words on the site
+
+- Explorers Legacy Studios, Explorers Legacy Institute, and Explorers Legacy have no apostrophe. The retired names Brain Quest Studios, Explorer's Oath Studios, and The Explorer's Institute do not appear.
+- ™ (never ®) on the first or most prominent use of Explorers Legacy Studios, Explorers Legacy Institute, and Atlas. Inside images or video text it is a small raised superscript, about a third of the letter height. Keep the © 2026 footer line.
+- The tagline in current site copy is "Every great adventure begins with curiosity." The sign-off is "Onward to Discovery." Pending the Founder's decision: do not add or remove "Discover. Learn. Grow. Inspire." until Roger says whether it is a tagline.
+- Never say the learning or the adventure is complete, finished, over, or "ends with" something. At most one exclamation mark in a line. No "-zilla" jokes.
+- Calls to action speak to families and caregivers, not to children.
+- Images are original ELS art, CC0, public domain, or properly licensed, with an entry in `assets/learn/sources.json` or the page credits. AI-made or reconstructed images are labeled as AI. A new outside image credit needs the Founder's OK before merge. Every new public asset gets an IP Register entry before it goes live.
+- No copyrighted music or media. Background music in any embedded ELS video is original.
+
+Pending the Founder's decision: do not add Expedition catalog codes to the website until Roger approves them.
+
+## Learn articles
+
+The Learn section carries short S.T.E.A.M. news and event articles that match the ELS social posts. Each article lists its sources with dates, separates fact from uncertainty, and gets the Founder's written Approved before merge.
 
 ## Mandatory Development Standard, version 1.1
 
@@ -49,3 +67,5 @@ The November 2026 review is [docs/audits/2026-11_Website_Mandatory_Standard_Audi
 - Do not commit secrets.
 - Before a pull request, run `python3 -m unittest discover -s tests -v`.
 - The GitHub Pages workflow publishes only after the Founder's environment approval, and only when the readiness record matches the reviewed commit. Do not bypass it.
+
+
