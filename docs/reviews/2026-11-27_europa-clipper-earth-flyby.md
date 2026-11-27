@@ -12,11 +12,12 @@ Engineering already held the Voyager articles, including the 19 Nov. 2026 one-li
 
 A new Engineering article, added 27 Nov. 2026, says Europa Clipper will swing past Earth on Thursday, December 3, 2026, for a gravity assist on its way to Jupiter.
 
-- NASA Science, “NASA’s Europa Clipper Zooming by Earth on Way to Jupiter’s Icy Moon,” 25 Nov. 2026, is the news report. The lesson uses it for the spacecraft size and weight, the 1.8 billion-mile trip, the December 3 distance range and the 3:14 p.m. EST closest approach west of Africa, the gravity assist and the March 2025 Mars pass, the nine instruments, the magnetometer and E-THEMIS, the April 2030 Jupiter orbit, the Europa flybys, the telescope note, and the open question about ingredients for life.
+- NASA Science, “NASA’s Europa Clipper Zooming by Earth on Way to Jupiter’s Icy Moon,” 25 Nov. 2026, is the news report. The lesson uses it for the spacecraft size and weight, the 1.8 billion-mile trip, the December 3 distance range and the 3:14 p.m. EST closest approach west of Africa, the December 3 Earth gravity assist that adds speed, the March 2025 Mars pass that used gravity to slow the spacecraft and reshape its orbit around the Sun, the nine instruments, the magnetometer and E-THEMIS, the April 2030 Jupiter orbit, the Europa flybys, the telescope note, and the open question about ingredients for life.
 - NASA Science, “Europa Clipper,” accessed 27 Nov. 2026, is the mission page. The lesson uses it for the trip length, the April 2030 orbit, the Europa flybys, and the ocean scientists think lies under the ice. The page also points to the December 3, 2026 Earth flyby.
 - The body states the closest approach as 3:14 p.m. Eastern time (2:14 p.m. Central time). The NASA report states 3:14 p.m. EST. The Central reading is that same moment.
 - The article keeps a verified list separate from what is still uncertain. The closest distance is a range, not one number. An ocean under Europa’s ice is what scientists believe, and the magnetometer aims to help confirm it. Whether that ocean has the ingredients for life is still unknown.
 - No photograph is on the page.
+- The seeing section states only NASA’s telescope note: people near the path, mainly in southern Europe and Africa, may spot the spacecraft with fairly large hobby telescopes.
 
 ## Learner notes
 
@@ -26,4 +27,4 @@ The reader is addressed as Explorer. No tracker was added. `assets/learn.css` wa
 
 ## Release
 
-This note is the review record for the change. It is not Founder approval. `.els-release-readiness.json` was not marked ready for this commit.
+On 27 Nov. 2026 Roger approved a correction of two sentences so they follow the NASA report: the March 2025 Mars pass slowed the spacecraft and reshaped its orbit around the Sun, and the December 3 Earth flyby is the pass that adds speed. The visibility note stays with NASA’s telescope statement. `.els-release-readiness.json` was not marked ready for this commit.
